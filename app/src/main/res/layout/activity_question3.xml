@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question3Activity"
+    android:background="@drawable/background_unblur"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/ll_cardQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Question 3"
+            android:textColor="@color/Alternative"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="What is the most food you've ever seen me eat at one sitting?"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+        <RadioGroup
+            android:id="@+id/rg_answers_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rg_answers_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/option_border"
+                android:buttonTint="@color/Alternative"
+                android:lines="5"
+                android:paddingLeft="18dp"
+                android:text="Burger"
+                android:textColor="@color/white"
+                android:textColorLink="#FFEB3B"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rg_answers_3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/option_border"
+                android:buttonTint="@color/Alternative"
+                android:paddingLeft="18dp"
+                android:text="Chicken"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rg_answers_3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option_border"
+                android:buttonTint="@color/Alternative"
+                android:paddingLeft="18dp"
+                android:text="Vegetables"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0"
+        android:paddingVertical="16dp"
+        android:text="Next Question"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_progressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="330dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="8dp"
+            android:progress="25"
+            android:progressTint="@color/Accent3"
+            android:progressBackgroundTint="@color/WhiteTransparent"
+            android:elevation="0dp"
+            />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="40dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

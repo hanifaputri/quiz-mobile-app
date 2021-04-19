@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:padding="24dp"
+    android:background="@drawable/background_unblur">
+
+    <LinearLayout
+        android:id="@+id/ll_cardResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_trophy"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_marginBottom="32dp"
+            app:srcCompat="@drawable/icon_trophy" />
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textColor="#BFFFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="100"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="72sp" />
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="You answered 3 out of 4 right questions"
+            android:textAlignment="center"
+            android:textColor="#BFFFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_shareResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0"
+            android:paddingVertical="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Share Result"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_reattempt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_alternative"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0"
+            android:paddingVertical="16dp"
+            android:text="Reattempt Quiz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
