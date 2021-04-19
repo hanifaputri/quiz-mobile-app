@@ -3,4 +3,3 @@
 *.python linguist-detectable=true 
 *.js linguist-detectable=false
 *.html linguist-detectable=false  
-*.xml linguist-detectable=true
